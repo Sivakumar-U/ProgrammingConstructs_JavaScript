@@ -52,3 +52,12 @@ const prompt = require('prompt-sync')();
             console.log(num);
     }   
 }
+
+// 5) Write a program that computes a factorial of a number taken as input.5 Factorial – 5! = 1 * 2 * 3 * 4 * 5
+{
+    let number=Number(prompt("Enter the number to find factorial:"));
+    let fact = 1;
+    for(let i=1; i<=number;i++)
+        fact = fact * i;
+    console.log("Factorial of "+number+" is :"+fact);
+}
