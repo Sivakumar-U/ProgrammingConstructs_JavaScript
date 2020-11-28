@@ -5,3 +5,13 @@ const prompt = require('prompt-sync')();
     for(let i=1;i<=number;i++)
         console.log("2 ^ "+i+" ="+Math.pow(2,i));
 }
+
+// 2)Write a program that takes a command-line argument n and prints the nth harmonic number.
+{
+    let number=Number(prompt("Enter number to print harmonic number :"));
+    let harmonic=0
+    for(let i=1;i<=number;i++){
+        harmonic=harmonic+(1/i);
+        console.log(i+" th Harmonic number :"+harmonic);
+    }
+}
