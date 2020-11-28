@@ -69,3 +69,11 @@ if( ((year % 4) == 0 && (year%100) != 0) || year% 400 == 0)
 else
     console.log("Not a leap year.");
 
+// 4) Write a program to simulate a coin flip and print out "Heads" or "Tails" accordingly.
+let coin=Math.floor(Math.random()*10)%2;
+const heads=1;
+if ( coin == heads)
+    console.log("HEADS.");
+else
+    console.log("TAILS.");
+
