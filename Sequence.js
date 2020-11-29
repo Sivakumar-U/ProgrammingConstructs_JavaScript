@@ -10,5 +10,3 @@ console.log("Random number :"+diceNumber);
 let diceNumber1=(Math.floor(Math.random()*10)%6)+1;
 let diceNumber2=(Math.floor(Math.random()*10)%6)+1;
 console.log("Addition of two random numbers :"+(diceNumber+diceNumber2));
-
-// 4) Write a program that reads 5 Random 2 Digit values ,then find their sum and the average
