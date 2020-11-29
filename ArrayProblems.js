@@ -84,7 +84,6 @@ const prompt = require('prompt-sync')();
 {
     let length=Number(prompt("Enter total numbers in array:"));
     console.log("Enter numbers to check if three numbers adds to zero :");
-
     var array=new Array();
     for (let i=0;i<length;i++){
         array[i]=Number(prompt("Enter a number "+(i+1)+" : "));
@@ -102,3 +101,17 @@ const prompt = require('prompt-sync')();
     if(found == 0)
         console.log("The given integer are not adds to zero.");
 }
+
+// 5) Take a range from 0 – 100, find the digits that are repeated twice like 33, 77,etc and store them in an array
+let start = prompt("Enter starting number : ");
+let end = prompt("Enter ending number : ");
+let repeatedDigits = [];
+
+for (let number = start; number <= end; number++) {
+    let quotient = parseInt(number / 10);
+    let remainder = number % 10;
+    if (quotient == remainder && number != 0) {
+        repeatedDigits.push(number);
+    }
+}
+console.log("Repeated digits are : " + repeatedDigits);
