@@ -50,3 +50,21 @@ const prompt = require('prompt-sync')();
     console.log("No of head wins are : " +noOfHeads+" No of tail wins are : " +noOfTails);
 }
 
+// 4) Write a Program where a gambler starts with Rs 100 and places Re 1 bet until he/she goes broke i.e. no more money to gamble or reaches the goal of Rs 200. Keeps track of number of times won and number of bets made.
+{
+    let money=100;
+    const goal=200;
+    const bet_money=1;
+    let bets=0;
+    let wins=0;
+    while(money == 0 || money < goal){
+        bets++;
+        if(Math.floor(Math.random()*10)%2 ==1){
+            money+=bet_money;
+            wins++;
+        }
+        else
+            money-=bet_money;
+    }
+    console.log("Out of "+bets+" gambler bets, number of gambler wins are :"+wins);
+}
